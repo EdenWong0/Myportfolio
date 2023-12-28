@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Exo+2:wght@500&family=Noto+Sans+JP:wght@300&family=Oswald:wght@700&family=Poppins:ital,wght@1,700;1,900&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Exo+2:wght@500&family=Noto+Sans+JP:wght@300&family=Oswald:wght@700&family=Poppins:ital,wght@1,700;1,900&family=Quicksand&family=Vina+Sans&display=swap');
 
 :root{
-    --navy-theme-background-color: #fff;
+    --navy-theme-background-color: #FDF5E6;
     --navy-theme-main-color: #ffa600;
     --navy-them-sub-text-color: black;
     --navy-theme-nav-background-color: #191970;

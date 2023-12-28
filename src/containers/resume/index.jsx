@@ -1,10 +1,15 @@
 import React from 'react'
+import { GrResume } from "react-icons/gr";
+import HeaderContent from '../../components/headerContent'
 
 const Resume = () => {
   return (
-    <div>
-        Resume
-    </div>
+    <section id='resume' className='resume'>
+      <HeaderContent
+        headerText = "My Resume"
+        icon={<GrResume  size={50}/>}
+      />
+    </section>
   )
 }
 

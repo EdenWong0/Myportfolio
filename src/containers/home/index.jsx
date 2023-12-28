@@ -3,6 +3,8 @@ import './home.scss'
 import {useNavigate} from 'react-router-dom'
 import {Animate} from 'react-simple-animate'
 import edenImage from '../../assist/eden.jpeg'
+import { FaDownload } from "react-icons/fa6";
+import { MdContactPhone } from "react-icons/md";
 
 const Home = () => {
 
@@ -11,7 +13,19 @@ const Home = () => {
 
   const handleNavigateToContactMePage=()=>{
     navigate('/contact');
-  }
+  };
+
+  const handleDownloadResume = () => {
+    const resumeUrl = '../../assist/myresume.pdf';
+    // Trigger download using JavaScript
+    const link = document.createElement('a');
+    link.href = resumeUrl;
+    link.download = 'myresume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id='home' className='home'>
       <div className='home__content-wrapper'>
@@ -19,7 +33,7 @@ const Home = () => {
           <h1>
             Hi there, I am Eden
             <br />
-            <strong>A Front End Developer</strong>
+            <strong style={{ color: '#0000cc' }}>A Front End Developer</strong>
           </h1>
         </div>
       </div>
@@ -35,8 +49,14 @@ const Home = () => {
       }}
       >
       <div className='home__contact-me'>
-        <button onClick={handleNavigateToContactMePage}>Contact Me</button>
-        <button>Download My Resume</button>
+        <button onClick={handleNavigateToContactMePage}>
+        Contact Me
+        <MdContactPhone style={{ marginRight: '8px' }} />
+        </button>
+        <button onClick={handleDownloadResume}>
+        Download My Resume
+        <FaDownload style={{ marginRight: '8px' }} />
+        </button>
       </div>
       </Animate>
     </section>

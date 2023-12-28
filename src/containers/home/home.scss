@@ -12,7 +12,7 @@
       flex-direction: column;
       justify-content: center;
       margin-right: 80%;
-  
+
       h1 {
         color: var(--navy-theme-main-color);
         margin: auto;
@@ -26,6 +26,7 @@
       }
     }
   
+  
     &__contact-me {
         display: flex;
         justify-content: center;
@@ -34,17 +35,16 @@
   
       button {
         cursor: pointer;
-        padding: 10px 70px;
+        padding: 10px 50px;
         font-size: 2rem;
         background: transparent;
-        color: var(--navy-theme-main-color);
+        color: #ffffff;
         border: 1.5px solid var(--navy-theme-main-color);
         border-radius: 4px;
         font-weight: 500;
 
         &:hover{
-            background: var(--navy-theme-main-color);
-            color: #fff;
+            color: #2f4f4f;
         }
       }
     }

@@ -10,6 +10,9 @@ import { FaPhone } from "react-icons/fa";
 import {DiJavascript1 } from 'react-icons/di'
 import {FaDev, FaReact , FaHtml5, FaDatabase } from 'react-icons/fa'
 import { SiTailwindcss } from "react-icons/si";
+import frontend from '../../assist/about/frontend.jpg';
+import uxui from '../../assist/about/uiux.jpg';
+import database from '../../assist/about/database.png';
 
 
 const personalDetails = [
@@ -37,14 +40,28 @@ const personalDetails = [
 
 const summary = (
   <>
-    <p>I am a passionate Front End Developer with expertise in web development. I specialize in creating user-friendly and responsive interfaces that provide a seamless user experience.</p>
-    <h3>Services</h3>
     <div className='serviceBoxes'>
-      <div className='serviceBox'>Front End Development</div>
-      <div className='serviceBox'>Web Development</div>
-      <div className='serviceBox'>UI/UX Design</div>
-      <div className='serviceBox'>Responsive Design</div>
+    <div className='serviceBox'>
+      <img src={frontend} alt="Front End Development" />
+      <h4>Front End Development</h4>
+      <p>Building user interfaces and interactions using HTML, CSS, and JavaScript.</p>
     </div>
+    <div className='serviceBox'>
+      <img src="web_development_image.jpg" alt="Web Development" />
+      <h4>Web Development</h4>
+      <p>Creating dynamic and interactive websites with a focus on performance and functionality.</p>
+    </div>
+    <div className='serviceBox'>
+      <img src={uxui} alt="UI/UX Design" />
+      <h4>UI/UX Design</h4>
+      <p>Designing visually appealing and user-friendly interfaces to enhance user experience.</p>
+    </div>
+    <div className='serviceBox'>
+      <img src={database} alt="Responsive Design" />
+      <h4>Database Administration</h4>
+      <p>Ensuring efficient management and optimization of databases for websites and applications.</p>
+    </div>
+  </div>
   </>
 );
 
@@ -97,6 +114,17 @@ const About = () => {
       </Animate>
         </div>
         <div className='about__content__serviceWrapper'>
+            <Animate
+              play
+              duration={1.5}
+              delay={1}
+              start={{
+                transform : 'translateX(600px)',
+              }}
+              end={{
+                transform : 'translatex(0px)',
+              }}
+            >
           <div className='about__content__serviceWrapper__innerContent'>
           <div>
             <FaDev size={60} color="var(--navy-theme-main-color)" />
@@ -117,6 +145,7 @@ const About = () => {
             <FaDatabase size={60} color="var(--navy-theme-main-color)" />
           </div>
         </div>
+        </Animate>
         </div>
       </div>
     </section>

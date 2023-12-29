@@ -31,7 +31,7 @@ const Home = () => {
       <div className='home__content-wrapper'>
         <div className='home__text-wrapper'>
           <h1>
-            Hi there, I am Eden
+            Hi there, I am Eden Wong
             <br />
             <strong style={{ color: '#0000cc' }}>A Front End Developer</strong>
           </h1>

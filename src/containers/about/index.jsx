@@ -13,6 +13,7 @@ import { SiTailwindcss } from "react-icons/si";
 import frontend from '../../assist/about/frontend.jpg';
 import uxui from '../../assist/about/uiux.jpg';
 import database from '../../assist/about/database.png';
+import web from '../../assist/about/web.jpg'
 
 
 const personalDetails = [
@@ -47,7 +48,7 @@ const summary = (
       <p>Building user interfaces and interactions using HTML, CSS, and JavaScript.</p>
     </div>
     <div className='serviceBox'>
-      <img src="web_development_image.jpg" alt="Web Development" />
+      <img src={web} alt="Web Development" />
       <h4>Web Development</h4>
       <p>Creating dynamic and interactive websites with a focus on performance and functionality.</p>
     </div>

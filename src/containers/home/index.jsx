@@ -31,9 +31,9 @@ const Home = () => {
       <div className='home__content-wrapper'>
         <div className='home__text-wrapper'>
           <h1>
-            Hi there, I am Eden Wong
+            Hi there 👋🏻, I am Eden Wong
             <br />
-            <strong style={{ color: '#0000cc' }}>A Front End Developer</strong>
+            <strong style={{ color: '#0000cc' }}>A Front End Developer 👨🏻‍💻 </strong>
           </h1>
         </div>
       </div>
@@ -50,11 +50,11 @@ const Home = () => {
       >
       <div className='home__contact-me'>
         <button onClick={handleNavigateToContactMePage}>
-        Contact Me
+        👉🏻 Contact Me
         <MdContactPhone style={{ marginRight: '8px' }} />
         </button>
         <button onClick={handleDownloadResume}>
-        Download My Resume
+        👉🏻 Download My Resume
         <FaDownload style={{ marginRight: '8px' }} />
         </button>
       </div>

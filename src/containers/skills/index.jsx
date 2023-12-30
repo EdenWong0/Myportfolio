@@ -4,6 +4,7 @@ import HeaderContent from '../../components/headerContent'
 import { skillsData } from './utils';
 import { Animate, AnimateKeyframes } from 'react-simple-animate';
 import { Line } from 'rc-progress';
+import './skill.scss';
 
 const Skill = () => {
   return (
@@ -28,8 +29,8 @@ const Skill = () => {
                 transform : 'translateX(0px)'
               }}
               >
-                <h3 className='skill__content-wrapper__inner-content__category'>{item.label}</h3>
-                <div>
+                <h3 className='skill__content-wrapper__inner-content__category-text'>{item.label}</h3>
+                <div className='skill__content-wrapper__inner-content__progressbar-container'>
                   {
                     item.data.map((skillItem, j)=> (
                       <AnimateKeyframes
@@ -39,7 +40,7 @@ const Skill = () => {
                         iterationCount="1"
                       >
                         <div className='progressbar-wrapper' key={j}>
-                          <p>{skillItem.skillName}</p>
+                          <p>{skillItem.skillName}{skillItem.icon}</p>
                           <Line
                             percent={skillItem.percentage}
                             strokeWidth="2"

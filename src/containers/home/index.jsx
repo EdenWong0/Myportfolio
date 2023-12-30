@@ -33,7 +33,7 @@ const Home = () => {
           <h1>
             Hi there 👋🏻, I am Eden Wong
             <br />
-            <strong style={{ color: '#0000cc' }}>A Front End Developer 👨🏻‍💻 </strong>
+            <strong style={{ color: '#0000cc' }}>A Front End Developer</strong>
           </h1>
         </div>
       </div>
